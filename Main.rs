@@ -16,6 +16,9 @@ probably 3 files:
 1 for outcome values
 */
 
+// https://stackoverflow.com/questions/72526999/rust-equivalent-of-java-hashmap-initialization
+let mut ds_map: HashMap<String, Vec<u32>> = HashMap::new();
+
 fn main(){
   println!("levi wuz here");
 }
@@ -41,4 +44,8 @@ fn read_source(file_loc:String) -> Vec<u32>{
   let mut contents = String::new();
   file.read_to_string(&mut contents).unwrap();
   eprintln("{contents}");
+}
+
+fn note_adjustments(){
+  let mut file = std::fs::File::create(
 }
