@@ -17,7 +17,13 @@ probably 3 files:
 */
 
 // https://stackoverflow.com/questions/72526999/rust-equivalent-of-java-hashmap-initialization
-//let mut ds_map: HashMap<String, Vec<u32>> = HashMap::new();
+let mut dataset_map: HashMap<String, Vec<u32>> = HashMap::from([
+  ("got_vars", Vec::new()), ("set_vars", Vec::new()), ("results", Vec::new())
+]);
+
+let mut loc_map: HashMap<String, String>> = HashMap::from({
+  ("get_loc", "none"), ("set_loc", "none"), ("res_loc", "none")
+});
 
 // https://www.tutorialspoint.com/rust/rust_collections.htm
 let mut got_vars = Vec::new();
@@ -25,7 +31,7 @@ let mut set_vars = Vec::new();
 let mut results = Vec::new();
 let mut get_loc = String::new();
 let mut set_loc = String::new();
-let mut res_loc = String:new();
+let mut res_loc = String::new();
 
 fn main(){
   println!("levi wuz here");
