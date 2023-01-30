@@ -1,5 +1,20 @@
 use std:io:Read;
 
+/*
+server notes the variable values it's using
+as well as the resulting outcomes
+
+that info is then digested by this program
+this program then notes down its suggested adjustments to the var vals
+
+the server then digests it
+
+it will be like a mailbox system.
+probably 3 files:
+2 for variable values (is, should)
+1 for outcome values
+*/
+
 fn main(){
   println!("levi wuz here");
 }
