@@ -23,7 +23,7 @@ probably 3 files:
 let mut got_vars = Vec::new();
 let mut set_vars = Vec::new();
 let mut results = Vec::new();
-let mut file_loc = String::from("get:none results:none set:none");
+let mut file_locs = String::from("get:none results:none set:none ");
 
 fn main(){
   println!("levi wuz here");
@@ -39,7 +39,10 @@ fn main(){
 fn set_source(dataset:String, file_loc:String, ){
   eprintln!("set_source(dataset:{dataset}, file_loc:{file_loc})");
   
-  file_loc = file_loc.replace("{dataset}:"
+  // https://www.tutorialspoint.com/rust/rust_string.htm
+  let temp = file_locs.split("{dataset}:")[0].split(" ")[0];
+  
+  file_locs = file_locs.replace("{dataset}:"
 }
 
 // https://www.tutorialspoint.com/rust/rust_file_input_output.htm
