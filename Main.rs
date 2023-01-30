@@ -23,7 +23,6 @@ probably 3 files:
 let mut got_vars = Vec::new();
 let mut set_vars = Vec::new();
 let mut results = Vec::new();
-//let mut file_locs = String::from("get:none results:none set:none ");
 let mut get_loc = String::new();
 let mut set_loc = String::new();
 let mut res_loc = String:new();
@@ -31,26 +30,6 @@ let mut res_loc = String:new();
 fn main(){
   println!("levi wuz here");
 }
-
-//fn set_input_source(txt:String){
-//fn set_output_source(txt:String){
-
-/*
- * file_loc = the path to the file location
- * dataset = varGet, results, varSet
-*/
-//fn set_source(dataset:String, file_loc:String, ){
-  //eprintln!("set_source(dataset:{dataset}, file_loc:{file_loc})");
-  
-  // https://www.tutorialspoint.com/rust/rust_string.htm
-  /*let temp0 = file_locs.split("{dataset}:")[0]
-  let temp1 = temp0.split(" ")[1];
-  temp0.push_str("{dataset}:{file_loc} ")
-  temp0.push_str(temp1);*/
-  // F THIS
-  
-  
-//}
 
 // https://www.tutorialspoint.com/rust/rust_file_input_output.htm
 // https://stackoverflow.com/questions/59164456/how-do-i-return-an-array-from-a-rust-function
