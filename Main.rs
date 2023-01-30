@@ -17,7 +17,13 @@ probably 3 files:
 */
 
 // https://stackoverflow.com/questions/72526999/rust-equivalent-of-java-hashmap-initialization
-let mut ds_map: HashMap<String, Vec<u32>> = HashMap::new();
+//let mut ds_map: HashMap<String, Vec<u32>> = HashMap::new();
+
+// https://www.tutorialspoint.com/rust/rust_collections.htm
+let mut got_vars = Vec::new();
+let mut set_vars = Vec::new();
+let mut results = Vec::new();
+let mut file_loc = String::from("get:none results:none set:none");
 
 fn main(){
   println!("levi wuz here");
@@ -28,10 +34,10 @@ fn main(){
 
 /*
  * file_loc = the path to the file location
- * type = varGet, results, varSet
+ * dataset = varGet, results, varSet
 */
-fn set_source(file_loc:String, dataset_type:String){
-  eprintln!("set_source(file_loc:{file_loc}, dataset_type:{dataset_type})");
+fn set_source(dataset:String, file_loc:String, ){
+  eprintln!("set_source(dataset:{dataset}, file_loc:{file_loc})");
   
 }
 
@@ -46,6 +52,7 @@ fn read_source(file_loc:String) -> Vec<u32>{
   eprintln("{contents}");
 }
 
-fn note_adjustments(){
+// https://www.tutorialspoint.com/rust/rust_file_input_output.htm
+fn write_adjustments(){
   let mut file = std::fs::File::create(
 }
