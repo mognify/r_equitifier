@@ -1,4 +1,5 @@
-use std:io:Read;
+use std::io::Read;
+use std::io::Write;
 
 /*
 server notes the variable values it's using
