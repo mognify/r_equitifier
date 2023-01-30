@@ -22,9 +22,9 @@ let mut dataset_map: HashMap<String, Vec<u32>> = HashMap::from([
   ("got_vars", Vec::new()), ("set_vars", Vec::new()), ("results", Vec::new())
 ]);
 
-let mut loc_map: HashMap<String, String>> = HashMap::from({
+let mut loc_map: HashMap<String, String>> = HashMap::from([
   ("get_loc", "none"), ("set_loc", "none"), ("res_loc", "none")
-});
+]);
 
 fn main(){
   println!("levi wuz here");
