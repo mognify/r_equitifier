@@ -39,6 +39,7 @@ fn main(){
 fn set_source(dataset:String, file_loc:String, ){
   eprintln!("set_source(dataset:{dataset}, file_loc:{file_loc})");
   
+  file_loc = file_loc.replace("{dataset}:"
 }
 
 // https://www.tutorialspoint.com/rust/rust_file_input_output.htm
