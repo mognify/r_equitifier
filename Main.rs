@@ -13,3 +13,7 @@ fn main(){
 fn set_source_file(file_loc:String, input:bool){
   eprintln!("Read file location as: {file_loc}");
 }
+
+fn read_source(file_loc:String) -> Vec<u32>{
+  
+}
