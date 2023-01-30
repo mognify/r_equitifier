@@ -1,3 +1,5 @@
+use std:io:Read;
+
 fn main(){
   println!("levi wuz here");
 }
@@ -17,5 +19,8 @@ fn set_source_file(file_loc:String, input:bool){
 // https://www.tutorialspoint.com/rust/rust_file_input_output.htm
 // https://stackoverflow.com/questions/59164456/how-do-i-return-an-array-from-a-rust-function
 fn read_source(file_loc:String) -> Vec<u32>{
-  
+  let mut file = std::fs::File::open(file_loc).unwrap();
+  let mut contents = String::new();
+  file.read_to_string(&mut contents).unwrap();
+  eprintln("{contents}");
 }
