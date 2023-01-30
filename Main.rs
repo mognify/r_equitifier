@@ -24,16 +24,18 @@ fn main(){
 
 /*
  * file_loc = the path to the file location
- * input = whether this is the var input or the value outcome output file
- * ofc true = it's the var input, and false = it's the outcome output
+ * type = varGet, results, varSet
 */
-fn set_source_file(file_loc:String, input:bool){
-  eprintln!("Read file location as: {file_loc}");
+fn set_source(file_loc:String, dataset_type:String){
+  eprintln!("set_source(file_loc:{file_loc}, dataset_type:{dataset_type})");
+  
 }
 
 // https://www.tutorialspoint.com/rust/rust_file_input_output.htm
 // https://stackoverflow.com/questions/59164456/how-do-i-return-an-array-from-a-rust-function
 fn read_source(file_loc:String) -> Vec<u32>{
+  eprintln!("read_source(file_loc:{file_loc})");
+  
   let mut file = std::fs::File::open(file_loc).unwrap();
   let mut contents = String::new();
   file.read_to_string(&mut contents).unwrap();
