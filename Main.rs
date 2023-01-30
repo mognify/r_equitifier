@@ -14,6 +14,8 @@ fn set_source_file(file_loc:String, input:bool){
   eprintln!("Read file location as: {file_loc}");
 }
 
+// https://www.tutorialspoint.com/rust/rust_file_input_output.htm
+// https://stackoverflow.com/questions/59164456/how-do-i-return-an-array-from-a-rust-function
 fn read_source(file_loc:String) -> Vec<u32>{
   
 }
