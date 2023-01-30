@@ -11,5 +11,5 @@ fn main(){
  * ofc true = it's the var input, and false = it's the outcome output
 */
 fn set_source_file(file_loc:String, input:bool){
-  
+  eprintln!("Read file location as: {file_loc}");
 }
